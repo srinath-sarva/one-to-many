@@ -1,0 +1,47 @@
+package com.profiles.controller;
+
+import java.sql.Date;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.profiles.entity.User;
+import com.profiles.service.UserService;
+
+@RestController
+@Profile(value="dev")
+public class UserController {
+	
+	
+	@Autowired
+	private UserService service;
+	
+	@GetMapping("/getAll")
+	public List<User> getAll()
+	{
+		return service.getAll();
+	}
+	@PostMapping("/save")
+	public User saveUser(@RequestBody User user)
+	{
+		return service.save(user);
+	}
+	
+	@GetMapping("/date/{date}/{time}")
+	public String showDate(@DateTimeFormat( pattern = "YYYY-MM-dd")@PathVariable("date") LocalDate date, @DateTimeFormat(pattern = "HH:MM:SS")@PathVariable("time") LocalTime time )
+	{
+		return date+" "+time;
+	}
+
+	
+	
+}

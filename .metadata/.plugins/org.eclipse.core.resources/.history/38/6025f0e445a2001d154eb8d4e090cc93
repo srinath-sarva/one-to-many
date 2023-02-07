@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import java8fea.Employee;
+
+public class ListEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s="ab12321bajkkjh3432";
+		for(int i=0;i<s.length();i++)
+		{
+			for(int j=i+1;j<s.length();j++) {
+				String sub=s.substring(i,j);
+				String rev="";
+				System.out.println(sub);
+				for(int p=0;p<sub.length();p++) {
+					rev+=sub.charAt(sub.length()-p
+							);
+				}
+	             if(rev.equals(sub)) {
+	            	 System.out.println(sub);
+	             }
+			}
+		}
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;max&apos; from expression &apos;ls.stream().max(Comparator.comparing(Integer::valueOf))&apos;&#x0D;&#x0A;- Original project: &apos;pract&apos;&#x0D;&#x0A;- Variable name: &apos;max&apos;&#x0D;&#x0A;- Destination method: &apos;pract.Main.main(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;ls.stream().max(Comparator.comparing(Integer::valueOf))&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;max&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;pract{Main.java" name="max" replace="true" selection="266 56" stamp="1670072201189" varType="false" version="1.0"/>
+</session>

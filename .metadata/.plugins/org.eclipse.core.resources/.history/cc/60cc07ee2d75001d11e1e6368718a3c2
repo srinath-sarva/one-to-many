@@ -1,0 +1,11 @@
+package pract;
+
+public class DisplayWordsInReverse {
+	public static void main(String[] args) {
+		String s="Hi Hello How Are You";
+		String[] arr= s.split(" ");
+		System.out.println(arr.toString());
+		
+	}
+
+}

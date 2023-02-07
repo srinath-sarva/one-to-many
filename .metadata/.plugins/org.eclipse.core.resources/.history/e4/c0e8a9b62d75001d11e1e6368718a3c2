@@ -1,0 +1,9 @@
+package pract;
+
+public class DisplayWordsInReverse {
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

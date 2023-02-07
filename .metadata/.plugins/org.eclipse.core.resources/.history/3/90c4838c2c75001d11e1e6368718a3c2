@@ -1,0 +1,11 @@
+package pract;
+
+public class VowelOrConsonent {
+	
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

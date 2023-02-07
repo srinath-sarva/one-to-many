@@ -1,0 +1,5 @@
+package com.blogapp.payload;
+
+public class PostDto {
+
+}

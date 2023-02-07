@@ -1,0 +1,8 @@
+package com.algodomain.entity;
+
+public class Charges {
+	private double gst;
+	private double delivery;
+	
+
+}

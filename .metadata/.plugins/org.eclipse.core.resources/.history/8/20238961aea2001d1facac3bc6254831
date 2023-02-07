@@ -1,0 +1,5 @@
+package com.algodomain.entity;
+
+public class Product {
+
+}

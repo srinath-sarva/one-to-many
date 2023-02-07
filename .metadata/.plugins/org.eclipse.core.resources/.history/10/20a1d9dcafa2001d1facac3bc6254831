@@ -1,0 +1,15 @@
+package com.algodomain.service;
+
+import com.algodomain.entity.Product;
+
+public interface ProductServiceImpl {
+	
+	
+	public Product createProduct(Product prod);
+	public void deleteProduct(Long id);
+	public Product updateProduct(Long id, Product prod);
+	
+	
+	
+
+}

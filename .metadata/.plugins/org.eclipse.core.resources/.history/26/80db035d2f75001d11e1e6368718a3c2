@@ -1,0 +1,10 @@
+package pract;
+
+public class Anagarams {
+
+	public static void main(String[] args) {
+		String a="idle";
+		String b="edli";
+		
+	}
+}
